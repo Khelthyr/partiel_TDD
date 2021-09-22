@@ -8,4 +8,9 @@ final class ExercicePartielTest extends TestCase
     {
         $this->assertEquals("I", RomanNumber::decimalToRoman(1));
     }
+
+    public function testNumberIs2(): void
+    {
+        $this->assertEquals("II", RomanNumber::decimalToRoman(2));
+    }
 }
