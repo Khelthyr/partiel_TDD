@@ -6,6 +6,6 @@ final class ExercicePartielTest extends TestCase
 {
     public function testNumberIs1(): void
     {
-        $this->assertEquals(True, RomanNumber::decimalToRoman("I"));
+        $this->assertEquals("I", RomanNumber::decimalToRoman(1));
     }
 }

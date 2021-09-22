@@ -5,13 +5,15 @@
  */
 class RomanNumber
 {
-	public static function decimalToRoman(int $num)
+	public static function decimalToRoman($num)
 	{
+		$romanValue = '';
 		if ($num === 1) {
-			return "I";
+			return $romanValue = "I";
 		}
 		else{
-			return false;
+			return $romanValue;
 		}
+		return $romanValue;
 	}
 }
