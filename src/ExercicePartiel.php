@@ -54,7 +54,10 @@ class RomanNumber
 		'I' => 1);
 
 		foreach ($romanListNumber as $key => $value) {
-
+			while (strpos($romanNumber, $key)) {
+				$numberValue = $numberValue + $value;
+				$romanNumber = substr($romanNumber, strlen($key));
+			}
 		}
 		return $numberValue;
 	}
