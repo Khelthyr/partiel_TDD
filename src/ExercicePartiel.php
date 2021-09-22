@@ -35,9 +35,9 @@ class RomanNumber
 		return $romanValue;
 	}
 
-	public static function romanToDecimal(string $num)
+	public static function romanToDecimal(string $romanNumber)
 	{
-		$romanValue = '';
+		$numberValue = '';
 		$romanListNumber = array(
 		'M' => 1000,
 		'CM' => 900,
@@ -53,15 +53,9 @@ class RomanNumber
 		'IV' => 4,
 		'I' => 1);
 
-		while ($num > 0) {
-			foreach ($romanListNumber as $key => $value) {
-				if ($num >= $value) {
-					$num = $num - $value;
-					$romanValue = $romanValue . $key;
-					break;
-				}	
-			}
+		foreach ($romanListNumber as $key => $value) {
+
 		}
-		return $romanValue;
+		return $numberValue;
 	}
 }
