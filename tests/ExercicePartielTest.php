@@ -49,4 +49,9 @@ final class ExercicePartielTest extends TestCase
         $this->assertEquals("MMM", RomanNumber::decimalToRoman(3000)); 
     }
 
+    public function testRomanIsI(): void
+    {
+        $this->assertEquals("1", RomanNumber::romanToDecimal("I")); 
+    }
+
 }
