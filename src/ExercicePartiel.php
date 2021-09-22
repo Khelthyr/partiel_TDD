@@ -37,7 +37,7 @@ class RomanNumber
 
 	public static function romanToDecimal(string $romanNumber)
 	{
-		$numberValue = '';
+		$numberValue = 0;
 		$romanListNumber = array(
 		'M' => 1000,
 		'CM' => 900,
@@ -56,6 +56,7 @@ class RomanNumber
 		foreach ($romanListNumber as $key => $value) {
 			while (strpos($romanNumber, $key)) {
 				$numberValue = $numberValue + $value;
+				var_dump($numberValue);
 				$romanNumber = substr($romanNumber, strlen($key));
 			}
 		}

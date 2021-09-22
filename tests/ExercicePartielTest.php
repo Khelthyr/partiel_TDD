@@ -51,7 +51,16 @@ final class ExercicePartielTest extends TestCase
 
     public function testRomanIsI(): void
     {
-        $this->assertEquals("1", RomanNumber::romanToDecimal("I")); 
+        $this->assertEquals(1, RomanNumber::romanToDecimal("I")); 
     }
 
+    public function testRomanIsII(): void
+    {
+        $this->assertEquals(2, RomanNumber::romanToDecimal("II")); 
+    }
+
+    public function testRomanIsIII(): void
+    {
+        $this->assertEquals(3, RomanNumber::romanToDecimal("III")); 
+    }
 }
